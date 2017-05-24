@@ -1,0 +1,118 @@
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+.contact-popup-wprapper {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0)  perspective(0) scale(1.1);
+    transform: translate3d(-50%,-50%,0)  perspective(0) scale(1.1);
+    background-color: black;
+    color: white;
+
+
+}
+
+.contact-popup-wprapper .pupup-close {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.contact-popup-wprapper .pupup-close:before,
+.contact-popup-wprapper .pupup-close:after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    margin-top:5px;
+}
+.contact-popup-wprapper .pupup-close:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.contact-popup-wprapper .pupup-close:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.contact-popup-wprapper .contact-info {
+    padding: 20px 40px;
+}
+
+.contact-footer {
+    float: right;
+}
+.contact-footer p {
+    margin-bottom: 10px;
+}
+.contact-footer a {
+    display: block;
+}
+
+.contact-footer button {
+    padding: 0.75em 1em;
+    margin-top: 10px;
+}
+@media (max-width: 767px) {
+    .hide-on-small {
+        display: none !important;
+    }
+    .contact-footer a {
+        width: 100%;
+        background-color: #222;
+        border: 0;
+        border-radius: 2px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-size: 0.875rem;
+        font-weight: 800;
+        line-height: 1;
+        padding: 0.75em 1em;
+        text-shadow: none;
+        -webkit-transition: background 0.2s;
+        transition: background 0.2s;
+        text-align: center;
+    }
+    .contact-footer a:first-child {
+        margin-bottom: 10px;
+    }
+    .contact-footer button, .contact-footer {
+        width: 100%;
+    }
+
+    .contact-footer {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hide-on-big {
+        display: none !important;
+    }
+}

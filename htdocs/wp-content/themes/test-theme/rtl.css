@@ -1,0 +1,43 @@
+@media screen and (min-width: 48em) {
+    .has-sidebar #secondary {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .has-sidebar:not(.error404) #primary {
+        float: right;
+    }
+}
+
+.woocommerce #content div.product div.thumbnails a,
+.woocommerce div.product div.thumbnails a,
+.woocommerce-page #content div.product div.thumbnails a,
+.woocommerce-page div.product div.thumbnails a {
+    float: right;
+    margin-right: 0;
+    margin-left: 3.8%;
+}
+
+.site-footer .widget .product_list_widget li a.remove,
+.widget .product_list_widget li a.remove {
+    float: left;
+}
+
+.single-product .woocommerce-product-rating .star-rating {
+    float: right;
+    margin-left: .25em;
+}
+
+.widget_product_search .search-field {
+    padding-left: 100px;
+    padding-right: 0.7em;
+}
+
+.widget_product_search input[type=submit] {
+    left: .5em;
+}
+
+*:after {
+    content: "\200E‎";
+}
